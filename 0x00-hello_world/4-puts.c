@@ -1,8 +1,8 @@
 #include <stdio.h>
-/*
+/**
  * C program to illustrate the command put
- * main - displays the string in quotations 
- * return - marks the end of the program
+ * main: displays the string Programming is like building a multilingual puzzle
+ * return: marks the end of the program
  */
 int main(void)
 {
