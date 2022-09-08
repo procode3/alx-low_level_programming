@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-int main (void)
+int main(void)
 {
 	int intType;
 	float floatType;
@@ -21,5 +21,5 @@ int main (void)
 	printf("Size of a long long int: %zu byte(s)\n", sizeof(doubleType));
 	printf("Size of a float: %zu byte(s)\n", sizeof(floatType));
 
-	return 0;
+	return (0);
 }
