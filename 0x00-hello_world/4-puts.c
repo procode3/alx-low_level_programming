@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *main: The prgram entry point
+ * main: The prgram entry point
  *
- *return: normally 0
+ * return: Normally 0 (success)
  */
 int main(void)
 {
