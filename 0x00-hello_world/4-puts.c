@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - The prgram entry point
+ * main: The prgram entry point
  *
  * return: normally 0
  */
