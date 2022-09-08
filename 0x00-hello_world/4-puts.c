@@ -1,8 +1,8 @@
-/*Program to illustrate the use of puts*/
-
 #include <stdio.h>
 
 /**
+ * Program displaying the use of puts
+ *
  * main: The prgram entry point
  *
  * return: normally 0
