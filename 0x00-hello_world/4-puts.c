@@ -1,3 +1,5 @@
+/*Program to illustrate the use of puts*/
+
 #include <stdio.h>
 
 /**
