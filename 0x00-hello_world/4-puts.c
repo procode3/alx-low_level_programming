@@ -1,10 +1,5 @@
-/**
- *File: 4-puts.c
- *
- * Author: Erick Barasa, Alx <erickbaraza357@gmail.com>
- */
-
 #include <stdio.h>
+
 /**
  * main - The prgram entry point
  *
