@@ -1,12 +1,14 @@
+/**
+ *File: 4-puts.c
+ *
+ * Author: Erick Barasa, Alx <erickbaraza357@gmail.com>
+ */
+
 #include <stdio.h>
 /**
- * C program to illustrate the command put
+ * main - The prgram entry point
  *
- * main - prints the phrase "Programming is like building a multilingual puzzle
- *
- * main: displays the string Programming is like building a multilingual puzzle
- *
- * return (0): marks the end of the program
+ * return: normally 0
  */
 int main(void)
 {
