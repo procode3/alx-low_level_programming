@@ -9,15 +9,17 @@
 int main(void)
 {
 	int n;
+
 	for(int i=10; i<=19; i++)
 	{
-		n = i%10;
-		putchar(n%10 + '0');
-		if(n!=9)
+		n = i % 10;
+		putchar(n % 10 + '0');
+		if(n != 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
 	}
+	putchar('\n');
 	return (0);
 }
