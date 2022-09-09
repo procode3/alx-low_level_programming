@@ -8,13 +8,14 @@
 
 int main(void)
 {
-	for(int l_case='a'; l_case<='z'; l_case++)
+	for (int l_case = 'a'; l_case <= 'z'; l_case++)
 	{
 		putchar(l_case);
 	}
-	for(int u_case='A'; u_case<='Z'; u_case++)
+	for (int u_case = 'A'; u_case <= 'Z'; u_case++)
 	{
 		putchar(u_case);
 	}
+	putchar('\n');
 	return (0);
 }
