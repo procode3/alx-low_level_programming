@@ -8,10 +8,13 @@
 
 int main(void)
 {
-	for(int i=10; i<=19; i++)
+	int i;
+
+	for (i = 10; i <= 19; i++)
 	{
-		int n = i%10;
-		putchar (n%10 + '0');
+		int n = i % 10;
+		putchar (n % 10 + '0');
 	}
+	putchar('\n');
 	return (0);
 }
