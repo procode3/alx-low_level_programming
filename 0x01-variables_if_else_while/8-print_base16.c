@@ -10,7 +10,8 @@ int main(void)
 {
 	int c;
 	char l;
-	for(c = 48; c < 58; c++)
+
+	for (c = 48; c < 58; c++)
 	{
 		putchar(c);
 	}
@@ -18,5 +19,6 @@ int main(void)
 	{
 		putchar(l);
 	}
+	putchar('\n');
 	return (0);
 }
