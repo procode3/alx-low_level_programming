@@ -5,11 +5,9 @@
  *
  * Return: 0 normally
  */
-
 int main(void)
 {
 	int i, j, k;
-	
 	for (i = 48; i < 58; i++)
 	{
 		for (j = 49; j < 58; j++)
