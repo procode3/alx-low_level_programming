@@ -8,21 +8,14 @@
 
 int main(void)
 {
-	int i;
-	char vname[] = "_putchar";
-
-	for (i = 0; i < 80; i++)
-	{
-		if (vname[i] == '\0')
-		{
-			putchar('\n');
-			break;
-		}
-		else
-		{
-			putchar(vname[i]);
-		}
-	}
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
 	putchar('\n');
 	return (0);
 }
