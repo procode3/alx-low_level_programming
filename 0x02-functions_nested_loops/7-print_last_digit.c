@@ -15,6 +15,10 @@ int print_last_digit(int r)
 		r = -r;
 	}
 	l = r % 10;
+	while (l < 0)
+	{
+		l = -l;
+	}
 	_putchar(l + '0');
 	return (l);
 }
