@@ -4,7 +4,7 @@
  * _abs - returns the absolute of a number
  * @r: the integer that will be passed
  *
- * Return; Zero (0)
+ * Return: Zero (0)
  */
 
 int _abs(int r)
