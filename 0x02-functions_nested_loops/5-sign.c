@@ -16,10 +16,10 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		putchar(31);
+		
 		return (0);
 	}
-	else
+	else if (n < 0)
 	{
 		_putchar('-');
 	}
