@@ -6,15 +6,15 @@
  * Return: Int last digit
  */
 
-int print_last_digit(int r)
+int print_last_digit(int n)
 {
 	int l;
 
-	while (r < 0)
+	while (n < 0)
 	{
-		r = -r;
+		n = -n;
 	}
-	l = r % 10;
+	l = n % 10;
 	while (l < 0)
 	{
 		l = -l;
