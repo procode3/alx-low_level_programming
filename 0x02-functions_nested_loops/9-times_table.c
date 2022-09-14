@@ -16,15 +16,17 @@ void times_table(void)
 		for (b = 0; b < 10; b++)
 		{
 			arry1[a][b] = a * b;
-			_putchar(arry1[a][b]);
-			_putchar(',');
-			_putchar(' ');
 
 		}
 	}
-
+	for (a = 0; a < 10; a++)
+	{
+		for (b = 0; b < 10; b++)
+		{
+			_putchar(arry1[a][b]);
+			_putchar(',');
+			_putchar(' ');
+			_putchar('\n');
+		}
+	}
 }
-
-
-
-
