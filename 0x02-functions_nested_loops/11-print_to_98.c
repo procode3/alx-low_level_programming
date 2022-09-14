@@ -1,0 +1,46 @@
+#include "main.h"
+
+/**
+ * print_to_98  - printing ints fron n to 98
+ * @n: int parsed
+ *
+ * Return: Zero (0)
+ */
+
+void print_to_98(int n)
+{
+	int i;
+
+	if (n > 99)
+	{
+		for (int i = n; i >= 98; i--)
+		{
+			_putchar(n / 100 + '0');
+			_putchar((n / 10) % 10 + '0');
+			_putchar(n % 10 + '0');
+			_putchar(',');
+			_putchar(' ');
+
+		}
+	}
+	else if (n < 100 && n >= 98)
+	{
+		for (int i = n; i >= 98; i--)
+		{
+			_putchar(n / 10 + '0');
+			_putchar(n % 10 + '0');
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
+	else 
+	{
+		for (int i = n; i <= 98; i++)
+		{
+			_putchar(n / 10 + '0');
+			_putchar(n % 10 + '0');
+			_putchar(',');
+			_putchar(' ');
+		}
+	}
+}
