@@ -8,25 +8,22 @@
 
 void times_table(void)
 {
-	int a, b;
-	int arry1[10][10];
+	int num, mult, prod;
 
-	for (a = 0; a < 10; a++)
+	for (num = 0; num <= 9; num++)
 	{
-		for (b = 0; b < 10; b++)
+		_putchar('0');
+		for (mult = 1; mult <= 9; mult++)
 		{
-			arry1[a][b] = a * b;
-
-		}
-	}
-	for (a = 0; a < 10; a++)
-	{
-		for (b = 0; b < 10; b++)
-		{
-			_putchar(arry1[a][b]);
 			_putchar(',');
 			_putchar(' ');
-			_putchar('\n');
+			prod = num * mult;
+		if (prod <= 9)
+			_putchar(' ');
+		else
+			_putchar((prod / 10) + '0');
+			_putchar((prod % 10) + '0');
 		}
-	}
+		_putchar('\n');
+		}
 }
