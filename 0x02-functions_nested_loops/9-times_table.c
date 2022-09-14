@@ -9,7 +9,7 @@
 void times_table(void)
 {
 	int a, b;
-	int arry1[a][b];
+	int arry1[10][10];
 
 	for (a = 0; a < 10; a++)
 	{
@@ -22,6 +22,7 @@ void times_table(void)
 
 		}
 	}
+
 }
 
 
