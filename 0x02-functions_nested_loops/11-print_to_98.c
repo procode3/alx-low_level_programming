@@ -38,7 +38,7 @@ void print_to_98(int n)
 	}
 	else if (n < 98 && n >= 10)
 	{
-		_putchar(n % 10 + '0');
+		_putchar(n / 10 + '0');
 		_putchar(n % 10 + '0');
 
 		for (i = n + 1; i <= 98; i++)
