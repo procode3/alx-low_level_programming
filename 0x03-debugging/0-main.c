@@ -1,17 +1,16 @@
 #include "main.h"
 
 /**
- * main - tests function
- *
- * Return: Zero (0)
- */
+	* main - default description
+	* Description: default description
+	* Return: 0
+*/
 
 int main(void)
 {
 	int i;
 
 	i = 0;
-
-	positive_negative(i);
+	positive_or_negative(i);
 	return (0);
 }
