@@ -17,15 +17,12 @@ void print_rev(char *s)
 	{
 
 	}
+	len -= 1;
 
-	for (c = tmp; c >= 0; c--)
+	for (c = 0; c < len; c++)
 	{
-		if (s[c] == ' ')
-		{
-			s[c] = '\0';
-			s = &(s[c]) + 1;
-		}
-		_putchar(s[c]);
+		s[c] = s[len]
+		len--;
 	}
 	_putchar('\n');
 }
