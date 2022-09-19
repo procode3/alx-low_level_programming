@@ -22,7 +22,6 @@ void rev_string(char *s)
 
 	for (i = 0; i < (len - 1); i++)
 	{
-		lst++;
 		for (i = 0; i < len / 2; i++)
 		{
 			temp = *lst;
@@ -31,8 +30,6 @@ void rev_string(char *s)
 
 			fst++;
 			lst--;
-			_putchar(s[i]);
 		}
 	}
-	_putchar('\n');
 }
