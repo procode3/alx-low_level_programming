@@ -31,8 +31,8 @@ void rev_string(char *s)
 
 			fst++;
 			lst--;
+			_putchar(s[i]);
 		}
-		_putchar(s[i]);
 	}
 	_putchar('\n');
 }
