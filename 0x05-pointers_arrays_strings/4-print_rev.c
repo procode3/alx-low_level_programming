@@ -22,7 +22,7 @@ int _slen(char *s)
 
 void print_rev(char *s)
 {
-	int c, len, tmp, i;
+	int c, len, tmp;
 
 	len = _slen(s);
 
