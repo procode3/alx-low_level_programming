@@ -10,7 +10,6 @@
 void print_rev(char *s)
 {
 	int c, len, tmp;
-	char rs;
 
 	len = 0;
 	tmp = len - 1;
@@ -21,11 +20,11 @@ void print_rev(char *s)
 
 	for (c = tmp; c >= 0; c--)
 	{
-		if (s[c] == '')
+		if (s[c] == ' ')
 		{
 			s[c] = '\0';
-			rs = &(s[c]) + 1;
+			s = &(s[c]) + 1;
 		}
 	}
-	return (rs);
+	
 }
