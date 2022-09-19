@@ -10,17 +10,22 @@
 void print_rev(char *s)
 {
 	int c, len, tmp;
+	char rs;
 
 	len = 0;
+	tmp = len - 1;
 	for (len = 0; s[len] != 0; len++)
 	{
 
 	}
 
-	for (c = 0; c < len / 2; c++)
+	for (c = tmp; c >= 0; c--)
 	{
-		tmp = s[c];
-		s[c] = s[len - c - 1];
-		s[len - c - 1] = tmp;
+		if (s[c] == '')
+		{
+			s[c] = '\0';
+			rs = &(s[c]) + 1;
+		}
 	}
+	return (rs);
 }
