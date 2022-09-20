@@ -25,7 +25,7 @@ void puts_half(char *str)
 	}
 	if (i % 2 == 1)
 	{
-		for (c = i / 2; *(str + c) != 0; c++)
+		for (c = (i / 2) + 1; *(str + c) != 0; c++)
 		{
 			_putchar (*(str + c));
 		}
