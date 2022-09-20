@@ -11,7 +11,7 @@ void puts_half(char *str)
 {
 	int c, i;
 
-	for (i = 0 ; s[i] != '\0' ; i++)
+	for (i = 0 ; str[i] != '\0' ; i++)
 	{
 
 	}
@@ -20,14 +20,14 @@ void puts_half(char *str)
 	{
 		for (c = i / 2; *(str + c) != 0; c++)
 		{
-			putchar (*(str + c));
+			_putchar (*(str + c));
 		}
 	}
 	if (i % 2 == 1)
 	{
 		for (c = i / 2; *(str + c) != 0; c++)
 		{
-			putchar (*(str + c));
+			_putchar (*(str + c));
 		}
 	}
 	_putchar('\n');
