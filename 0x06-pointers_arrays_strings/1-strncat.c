@@ -4,6 +4,7 @@
  * *_strncat - returns a concanated pointer
  * @dest: destination
  * @src: source
+ * @n: useless int
  *
  *Return: char pointer
  */
