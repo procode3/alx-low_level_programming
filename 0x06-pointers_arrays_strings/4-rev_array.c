@@ -3,7 +3,7 @@
 /**
  * reverse_array - reverses an array
  * @a: array pointer
- * @n; size of array a
+ * @n: size of array a
  *
  * Return: nothing
  */
