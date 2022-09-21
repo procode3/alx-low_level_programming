@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - copies a string pointed to by the scr to the
+ * _strcmp - copies a string pointed to by the scr to the
  *	buffer pointed by the dest
  * @dest: destination pointer
  * @src: source pointer
@@ -10,13 +10,16 @@
  * Return: char pointer
  */
 
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-	int i;
+	int flag = 0, i;
 
-	for (i = 0; i < n && src[i] != 0; i++)
-		dest[i] = src[i];
-	for (; i < n; i++)
-		dest[i] = '\0';
-	return (dest);
+	for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
+		if (s1[i]! = s2[i])
+			flag = 1;
+			break;
+	if (flag == 0)
+		return (0);
+	else
+		return (1);
 }
