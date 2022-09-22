@@ -1,8 +1,4 @@
-#include <stdio.h>
-
-/**
- * main - maigic main
- */
+#include <stdiio.h>
 
 int main(void)
 {
