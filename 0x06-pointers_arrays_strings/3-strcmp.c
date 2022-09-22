@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * _strcmp - copies a string pointed to by the scr to the
- *	buffer pointed by the dest
- * @dest: destination pointer
- * @src: source pointer
- * @n: number of bites to be copied
+ * _strcmp - coompares strings
+ * @s1: 1st string
+ * @s2: 2nd string
  *
  * Return: char pointer
  */
@@ -17,11 +15,8 @@ int _strcmp(char *s1, char *s2)
 	for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
 		if (s1[i] != s2[i])
 		{
-			flag = (-15);
 			break;
 		}
-	if (flag == 0)
-		return (0);
-	else
-		return (15);
+	flag = s1[i] - s2[i];
+		return (flag);
 }
