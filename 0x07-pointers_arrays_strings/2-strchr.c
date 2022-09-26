@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h> 
+#include <stddef.h>
 
 /**
  * _strchr - returns a chr in strings
@@ -17,10 +17,9 @@ char *_strchr(char *s, char c)
 		return (s);
 		}
 
-	}
-	while (*s++);
-		{
+	} while (*s++);
+	{
 		return (NULL);
-		}
+	}
 
 }
