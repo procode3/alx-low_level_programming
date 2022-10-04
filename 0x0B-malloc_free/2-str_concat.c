@@ -11,7 +11,7 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int total, i, j = 0;
+	int i, j = 0;
 
 	char *ptr;
 
