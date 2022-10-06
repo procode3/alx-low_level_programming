@@ -34,16 +34,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 
-	for (; n < s2_len $$ i < (s1_len + n); i++)
+	for (; n < s2_len && i < (s1_len + n); i++)
 	{
 		ptr[i] = s2[j++];
 	}
 
-	for (; n >= s2_len $$ i < (s1_len + s2_len); i++)
+	for (; n >= s2_len && i < (s1_len + s2_len); i++)
 	{
 		ptr[i] = s2[j++];
 	}
 
-	s[i] = '\0';
+	ptr[i] = '\0';
 	return (ptr);
 }
