@@ -40,12 +40,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 
-	while (n < s2_len &&  j < len2)
+	while (n < s2_len &&  j < s2_len)
 	{
 		ptr[i++] = s2[j++];
 	}
 
-	while (n >= s2_len && j < len2)
+	while (n >= s2_len && j < s2_len)
 	{
 		ptr[i++] = s2[j++];
 	}
