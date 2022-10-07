@@ -28,8 +28,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		ptr = malloc(sizeof(char) * (s1_len + n + 1));
 	else
 		ptr = malloc(sizeof(char) * (s1_len + s2_len + 1));
-	
-	
+
+
 
 	if (!ptr)
 		return (NULL);
