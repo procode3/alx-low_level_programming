@@ -1,29 +1,6 @@
 #include <stdlib.h>
+#include "dog.h"
 #include <string.h>
-
-
-/**
- * struct dog - a dog's basic info
- * @name: First member
- * @age: Second member
- * @owner: Third member
- *
- * Description: Longer description
- */
-
-struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-};
-
-/**
- * dog_t - typedef for struct dog
- */
-
-typedef struct dog dog_t;
-
 
 
 /**
@@ -53,25 +30,25 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 
-	dog->name = malloc(sizeof(char) * (len1 + 1));
-	if (dog->name == NULL)
+	(*dog).name = malloc(sizeof(char) * (len1 + 1));
+	if ((*dog).name == NULL)
 	{
 		free(dog);
 		return (NULL);
 	}
-	dog->owner = malloc(sizeof(char) * (len2 + 1));
-	if (dog->owner == NULL)
+	(*dog).owner = malloc(sizeof(char) * (len2 + 1));
+	if ((*dog).owner == NULL)
 	{
 		free(dog);
 		free(dog->name);
 		return (NULL);
 	}
 
-	strcpy(dog->name, name);
+	strcpy((*dog).name, name);
 
-	strcpy(dog->owner, owner);
+	strcpy((*dog).owner, owner);
 
-	dog->age = age;
+	(*dog).age = age;
 
 	return (dog);
 }
