@@ -1,6 +1,31 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+/**
+ * struct dog - a dog's basic info
+ * @name: First member
+ * @age: Second member
+ * @owner: Third member
+ *
+ * Description: Longer description
+ */
+
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
+
+/**
+ * dog_t - typedef for struct dog
+ */
+
+typedef struct dog dog_t;
+
+
+
 /**
  * new_dog - creates a new dog
  * @name: name of the dog
