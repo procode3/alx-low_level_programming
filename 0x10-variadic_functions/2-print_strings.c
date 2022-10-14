@@ -3,14 +3,14 @@
 #include <stdio.h>
 
 /**
- * print_numbers - prints nums
+ * print_strings - prints nums
  * @separator: pts to separator
  * @n: count of elems
  *
  * Return: 0
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	
