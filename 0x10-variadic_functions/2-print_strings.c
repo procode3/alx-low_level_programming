@@ -13,7 +13,9 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
-
+	
+	char *str;
+	
 	unsigned int i;
 
 	va_start(ap, n);
@@ -37,7 +39,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 	va_end(ap);
 
-	printf("\n");
+	printf("n");
 
 }
 
