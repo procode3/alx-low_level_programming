@@ -1,17 +1,17 @@
 #include "lists.h"
 
 /**
- *
+ * free_listint - frees memory of a linkedlist
+ * @head: pointer to 1st elem of a linked list
  */
 
 void free_listint(listint_t *head)
 {
-	listint_t *current = head;
+	listint_t *current;
 
-	while(head->next)
+	while (head)
 	{
-		head = head->next;
-		free(current->next);
-		free(current);
+		current = head->next;
+		free(head);
 	}
 }
