@@ -1,9 +1,9 @@
 #ifndef LIST_H
 #define LIST_H
 
-#include <stddef.h>                                                                                                       
-#include <stdio.h>                                                                                                        
-#include <string.h>                                                                                                       
+#include <stddef.h>
+#include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 
 /**
