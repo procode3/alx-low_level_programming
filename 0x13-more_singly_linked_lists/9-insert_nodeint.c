@@ -1,52 +1,42 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - inserts a new node at a given position
- * @head: pointer to the fisrt elem of listint_t list
- * @idx: index to insert new node
- * @n: integer
+ * insert_nodeint_at_index -  inserts a new node at a given position.
+ * @head: double pointer to the first node in the list
+ * @idx: index of the node to insert
+ * @n: value for new node
  *
- * Return: address of new node
+ * Return: pointer to the indexed node
  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *new;
-	listint_t *pre;
-	listint_t *temp = *head;
-	unsigned int counter = 0, counter2 = 0, i = 0;
+	unsigned int i;
+	listint_t *current, *new;
 
+	if (head == NULL)
+		return (NULL);
+	if (idx != 0)
+	{
+		current = *head;
+		for (i = 0; i < idx - 1 && current != NULL; i++)
+		{
+			current = current->next;
+		}
+		if (current == NULL)
+			return (NULL);
+	}
 	new = malloc(sizeof(listint_t));
-	if (!new)
-	{
+	if (new == NULL)
 		return (NULL);
-	}
-	pre = malloc(sizeof(listint_t));
-	if (!pre)
-	{
-		return (NULL);
-	}
-	while (*head)
-	{
-		*head = (*head)->next;
-		i++;
-	}
-	if (i < idx || !(*head))
-	{
-		return (NULL);
-	}
-	while ((*head) && (counter < idx))
-	{
-		temp = (*head)->next;
-		counter++;
-	}
 	new->n = n;
-	new->next = temp;
-	while ((*head) && (counter2 < (idx - 1)))
+	if (idx == 0)
 	{
-		pre = (*head)->next;
-		counter2++;
+		new->next = *head;
+		*head = new;
+		return (new);
 	}
-	pre->next = new;
+	new->next = current->next;
+	current->next = new;
 	return (new);
 }
