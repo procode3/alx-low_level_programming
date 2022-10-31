@@ -26,7 +26,7 @@ unsigned int binary_to_uint(const char *b)
 	while (b[j] == '0' || b[j] == '1')
 	{
 		num <<= 1;
-		num += b[j]-'0';
+		num += b[j] - '0';
 
 		j++;
 
