@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 	while (rd == 1024)
 	{
 		rd = read(fd, buff, sizeof(buff));
-		if (rd == -1)
+		if (rd <= 0)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
