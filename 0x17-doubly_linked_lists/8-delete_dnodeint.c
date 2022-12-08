@@ -1,17 +1,11 @@
 #include "lists.h"
 
 /**
- *
- *  * delete_dnodeint_at_index- deletes at gibem index
- *
- *   * @head: head of the list
- *
- *    * @index:node to be deleted
- *
- *     * Return: 1 on sucess, -1 on failure
- *
- *      */
-
+ * delete_dnodeint_at_index- deletes at gibem index
+ * @head: head of the list
+ * @index:node to be deleted
+ * Return: 1 on sucess, -1 on failure
+ */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *temp;
@@ -22,13 +16,11 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (-1);
 	}
 	temp = *head;
-
 	if (temp->prev == NULL && index == 0)
 	{
 		if (temp->next == NULL)
 		{
 			*head = NULL;
-			free(temp);
 			return (1);
 		}
 		temp->next->prev = NULL;
