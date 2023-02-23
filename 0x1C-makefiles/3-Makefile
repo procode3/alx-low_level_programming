@@ -8,10 +8,10 @@ all:$(SRC)
 	$(CC) $(SRC) -o $(NAME)
 
 clean:
-	$(RM) $(wildcard *~) $(wildcard *.swp) $(NAME)
+	$(RM) *~  *.swp $(NAME)
 
 oclean:
-	$(RM) $(wildcard *.o)
+	$(RM) *.o
 fclean:clean oclean
 
 re:fclean all
