@@ -22,14 +22,12 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	{
 		temp = temp->next->next->next->next;
 		printf("Value checked at index [%ld] = [%d]\n", temp->index, temp->n);
-		if (temp->n == value)
-			return (temp);
-		else if (temp->n > value)
+		if (temp->n > value)
 		{
-			printf("Value found between indexes [%ld] and [%ld]\n", i, i + jump_step);
+			printf("Value found between indexes [%ld] and [%ld]\n", i - jump_step, i);
 			return (line_search(list, jump_step, value));
 		}
-		else if (temp->n < value && size - i <= jump_step)
+		else if (temp->n <= value && size - i <= jump_step)
 		{
 			while (temp->next)
 			{
@@ -59,7 +57,7 @@ listint_t *line_search(listint_t *list, size_t size, int value)
 {
 	size_t i = 0;
 
-	while (list && i <= size)
+	while (list && i < size)
 	{
 		printf("Value checked at index [%ld] = [%d]\n", list->index, list->n);
 		if (list->n == value)
